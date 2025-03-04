@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+div{
+    text-align: center;
+}
+.header{
+	display: flex;
+	justify-content: space-between;
+	padding:25px;
+	background-color: rgb(54, 116, 181);
+	 border-radius: 0px 0px 15px 15px;
+}
+#aereo{
+	padding-left: 30px;
+	margin-top: 20px;
+}
+#titolo{
+	font-size: 40px;
+	padding-right:40px;
+}
+#iconaHome{
+	padding-right: 40px;
+	margin-top: 30px;
+}
+#menu{
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 80%;
+    height: 160px;
+}
+.footer{
+	position: absolute;
+	bottom: 20px;	
+}
+#build{
+	right:40px;
+	font-size: 20px;
+	opacity:0.5
+}
+#zoom{
+	font-size: 20px;
+	padding-left: 1000px;
+}
+#pic{
+	margin-left: 1180px;
+	position: relative;
+	bottom: 20px;
+}

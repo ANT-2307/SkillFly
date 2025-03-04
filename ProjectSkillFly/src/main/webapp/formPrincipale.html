@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserimento</title>
+    <link href="mioStile.css" rel="Stylesheet">
+    <style type="text/css">
+    .caselle{
+    	margin-left: 1%;
+    }
+	button{
+	  width: 50%;
+	  background-color:rgb(54, 116, 181) ;
+	  color: white;
+	  padding: 14px 20px;
+	  margin: 8px 0;
+	  border: none;
+	  border-radius: 4px;
+  	  cursor: pointer;
+ 	}
+ 	button:hover {
+  		background-color: rgb(41, 85, 133);
+  	}
+    </style>
+</head>
+<body>
+	<div>
+    <form action="Avvio" method="post" style="margin: 20px">
+    	<input type="hidden" name="operazione" value="preritorno">
+	    <label>Nome</label>
+	    <input type="text" placeholder="Es: Mario" name="nomeCliente" style=" border: none; border-bottom: 2px solid black;">
+	    <label class="caselle">Cognome</label>
+	    <input type="text" placeholder="Es: Rossi" name="cognomeCliente"  style=" border: none; border-bottom: 2px solid black;">
+	 	<label class="caselle">Codice Fiscale</label>
+	    <input type="text" placeholder="Es: 123456789ABCDEFG" name="CfCliente" min="16" max="16">
+	    <br><br>
+	    <label>Compagnia Aerea</label>
+	    <input type="text" placeholder="Es: SkillTravel" name="CompagniaAerea">
+	    <label class="caselle">N. Adulti</label>
+	    <input type="number" placeholder="1" name="nAdulti" style="width: 5%">
+	    <label class="caselle">N. Bambini</label>
+   	    <input type="number" placeholder="1" name="nBambini" style="width: 5%">
+	    <br><br>
+	    <label>Partenza</label>
+	    <input type="text" name="Partenza" placeholder="Da:">
+	    <label class="caselle">Destinazione</label>
+ 		<input type="text"  name="Destinazione"placeholder="A:">
+	    <br><br>
+	    <label>Data Partenza</label>
+	    <input type="date" name="dataPartenza">
+	    <label class="caselle">Data Arrivo</label>
+	    <input type="date" name="dataArrivo">
+	    <br><br>
+	    <label>Prezzo</label>
+	    <input type="number" name="ImportoPagato" style="width: 5%">
+	    <br><br>
+	    <label>Bagaglio?</label>
+	    <br>
+	    <label>Si</label>
+	    <input type="radio" name="Bagaglio" value="true">
+	    <label>No</label>
+	    <input type="radio" name="Bagaglio" value="false">
+	    <br><br>
+	    <hr><br>	
+        <button type="submit" style="font-size: 22px">Prenota</button>	  		
+    </form> 
+    </div>
+</body>
+</html>
